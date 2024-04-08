@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_navigation_bed_room"
+            app:destination="@id/navigation_bed_room" />
+        <action
+            android:id="@+id/action_navigation_home_to_fragmentSale"
+            app:destination="@id/fragmentSale" />
+        <action
+            android:id="@+id/action_navigation_home_to_gardenFragment"
+            app:destination="@id/gardenFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_zalFragment"
+            app:destination="@id/zalFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_kuchFragment"
+            app:destination="@id/kuchFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_kuchFragment3"
+            app:destination="@id/kuchFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_kuchFragment4"
+            app:destination="@id/kuchFragment" />
+        <action
+            android:id="@+id/action_navigation_home_to_kidsFragment"
+            app:destination="@id/kidsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_bed_room"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.dashboard.BedRoomFragment"
+        android:label="BedRoom"
+        tools:layout="@layout/fragment_bed_room" >
+        <action
+            android:id="@+id/action_navigation_bed_room_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/fragmentSale"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.Sale.FragmentSale"
+        android:label="fragment_sale"
+        tools:layout="@layout/fragment_sale" >
+        <action
+            android:id="@+id/action_fragmentSale_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/descriptionFragment"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.description.DescriptionFragment"
+        android:label="fragment_description"
+        tools:layout="@layout/fragment_description" >
+        <action
+            android:id="@+id/action_descriptionFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_descriptionFragment_self"
+            app:destination="@id/descriptionFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gardenFragment"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.garden.GardenFragment"
+        android:label="fragment_garden"
+        tools:layout="@layout/fragment_garden" >
+        <action
+            android:id="@+id/action_gardenFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/zalFragment"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.notifications.ZalFragment"
+        android:label="fragment_zal"
+        tools:layout="@layout/fragment_zal" >
+        <action
+            android:id="@+id/action_zalFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/kuchFragment"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.kuch.KuchFragment"
+        android:label="fragment_kuch"
+        tools:layout="@layout/fragment_kuch" >
+        <action
+            android:id="@+id/action_kuchFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/kidsFragment"
+        android:name="com.example.furniture_tabyldievawin_1_22.ui.kidsroom.KidsFragment"
+        android:label="fragment_kids"
+        tools:layout="@layout/fragment_kids" >
+        <action
+            android:id="@+id/action_kidsFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+</navigation>
